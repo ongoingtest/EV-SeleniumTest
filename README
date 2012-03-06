@@ -1,0 +1,9 @@
+Commit code: 
+git add README
+git commit -m 'first commit'
+git push origin master
+
+Get updates:
+$ git fetch upstream
+$ git merge upstream/master
+
