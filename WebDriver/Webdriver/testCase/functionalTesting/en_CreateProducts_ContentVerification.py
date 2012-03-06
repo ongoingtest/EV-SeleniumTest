@@ -3,24 +3,17 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 import unittest, time, re
+from Webdriver.all_globals import *
 
 class EnCreateProductsContentVerification(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Firefox()
-        self.driver.implicitly_wait(30)
-        self.base_url = "http://192.168.1.204:8080/"
-        self.verificationErrors = []
+        gb_setUp(self)
     
     def test_en_create_products_content_verification(self):
         driver = self.driver
-        driver.find_element_by_xpath("//div[@id='header']/div[2]/div[2]/a/button").click()
-        driver.find_element_by_id("form.login").clear()
-        driver.find_element_by_id("form.login").send_keys("yrtest")
-        driver.find_element_by_id("form.password").clear()
-        driver.find_element_by_id("form.password").send_keys("test")
-        driver.find_element_by_css_selector("span.commonButton.login_ok").click()
-        driver.get(self.base_url + "/ev/index")
-        driver.find_element_by_link_text("Create Products").click()
+        gb_login(self)
+        driver.get(self.base_url + "/ev/createproducts")
+        gb_frame(self)
         driver.find_element_by_id("productSearchButton").click()
         try: self.assertTrue(self.is_element_present(By.CSS_SELECTOR, "div.corporateLogo"))
         except AssertionError as e: self.verificationErrors.append(str(e))
@@ -28,55 +21,66 @@ class EnCreateProductsContentVerification(unittest.TestCase):
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertEqual("Create Products", driver.find_element_by_id("pageTitle").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
-        try: self.assertEqual("Welcome", driver.find_element_by_css_selector("#welcomeTitle > span").text)
-        except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertTrue(self.is_element_present(By.XPATH, "//div[@id='header']/div[2]/div[2]/a/button"))
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertTrue(self.is_element_present(By.CSS_SELECTOR, "span.columnHeaderText"))
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertEqual("Search Products", driver.find_element_by_css_selector("span.columnHeaderText").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
-        # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
+        try: self.assertIn("Product", driver.find_element_by_id("selectedFilterValue").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertIn("Invue Database", driver.find_element_by_id("selectedFilterValue").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertTrue(self.is_element_present(By.ID, "productSearch"))
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertEqual("", driver.find_element_by_id("productSearchButton").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
-        # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
+        try: self.assertIn("Please Select a Product", driver.find_element_by_id("selectProduct").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertTrue(self.is_element_present(By.CSS_SELECTOR, "div.blockText.selectedText"))
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertEqual("", driver.find_element_by_css_selector("div.bigDownArrow").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
-        try: self.assertEqual("Save Preview Delete New", driver.find_element_by_css_selector("#productDetailSpace > div.columnHeader > div").text)
+        try: self.assertIn("Save", driver.find_element_by_css_selector("#productDetailSpace > div.columnHeader > div").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertIn("Preview", driver.find_element_by_css_selector("#productDetailSpace > div.columnHeader > div").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertIn("Delete", driver.find_element_by_css_selector("#productDetailSpace > div.columnHeader > div").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertIn("New", driver.find_element_by_css_selector("#productDetailSpace > div.columnHeader > div").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertTrue(self.is_element_present(By.ID, "saveProduct"))
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertTrue(self.is_element_present(By.ID, "newProduct"))
         except AssertionError as e: self.verificationErrors.append(str(e))
-        # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
-        # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
+        try: self.assertIn("Setup Product or Accessory", driver.find_element_by_id("productName").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertTrue(self.is_element_present(By.CSS_SELECTOR, "label"))
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertTrue(self.is_element_present(By.XPATH, "//div[@id='productDetailSpace']/div/div[2]/label[2]"))
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertEqual("Manufacturer:", driver.find_element_by_xpath("//div[@id='productDetailSpace']/div/div[3]/div/span[2]").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
-        # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
+        try: self.assertIn("--New Manufacturer--", driver.find_element_by_id("detailManufacturer").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertTrue(self.is_element_present(By.ID, "addManufacturer"))
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertEqual("Category:", driver.find_element_by_xpath("//div[@id='productDetailSpace']/div/div[3]/div[2]/span").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertTrue(self.is_element_present(By.ID, "detailCategory"))
         except AssertionError as e: self.verificationErrors.append(str(e))
-        # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
-        # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
-        # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
+        try: self.assertTrue("Model:", driver.find_element_by_xpath("//div[@id='productDetailSpace']/div/div[4]/div/span").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertTrue("SKU:", driver.find_element_by_xpath("//div[@id='productDetailSpace']/div/div[4]/div[2]/span").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertTrue("Price:", driver.find_element_by_xpath("//div[@id='productDetailSpace']/div/div[4]/div[3]/span").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertTrue(self.is_element_present(By.ID, "detailModel"))
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertTrue(self.is_element_present(By.ID, "detailSeries"))
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertTrue(self.is_element_present(By.ID, "detailPrice"))
         except AssertionError as e: self.verificationErrors.append(str(e))
-        # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
         try: self.assertEqual("Product Image 1 (slide show)", driver.find_element_by_css_selector("#slideshowSection > div.blockText").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertEqual("+ AddImage", driver.find_element_by_css_selector("h2.mediaHeader").text)
