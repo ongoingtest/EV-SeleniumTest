@@ -3,16 +3,15 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 import unittest, time, re
+from Webdriver.all_globals import *
 
 class EnCreateProductsFunctionCreateManufacture(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Firefox()
-        self.driver.implicitly_wait(30)
-        self.base_url = "http://192.168.1.204:8080/"
-        self.verificationErrors = []
+        gb_setUp(self)
     
     def test_en_create_products_function_create_manufacture(self):
         driver = self.driver
+        gb_login(self)
         driver.get(self.base_url + "/ev/createproducts")
         # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
         # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
