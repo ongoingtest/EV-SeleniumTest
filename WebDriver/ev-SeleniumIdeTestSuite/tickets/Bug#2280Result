@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>Test case</title>
+<style>.failed {color: red; background-color: #ffcccc;}.passed {color: black; background-color: #ccffcc;}.done {color: black; background-color: #eeffee;}</style>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test case</td></tr>
+</thead><tbody>
+<tr class="done">
+	<td>open</td>
+	<td>/ev/assignaccessories</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=filterAccessories</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=filterAccessories</td>
+	<td>a</td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>css=span.searchIcon</td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyTextPresent</td>
+	<td>abcg</td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyTextPresent</td>
+	<td>abcf</td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyTextPresent</td>
+	<td>yrtesta</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=filterAccessories</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=filterAccessories</td>
+	<td>abc</td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>css=span.searchIcon</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>waitForTextPresent</td>
+	<td>abcg</td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyTextPresent</td>
+	<td>abcf</td>
+	<td></td>
+</tr>
+<tr class="failed">
+	<td>verifyTextNotPresent</td>
+	<td>yrtesta</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=filterProducts</td>
+	<td>a</td>
+</tr>
+<tr class="passed">
+	<td>verifyTextPresent</td>
+	<td>test product 1 Aifonsss</td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyTextPresent</td>
+	<td>test product 1 Aifon1xxx</td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyTextPresent</td>
+	<td>abcd</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=filterProducts</td>
+	<td>abcd</td>
+</tr>
+<tr class="passed">
+	<td>verifyTextPresent</td>
+	<td>abcd</td>
+	<td></td>
+</tr>
+<tr class="failed">
+	<td>verifyTextNotPresent</td>
+	<td>test product 1 Aifon1xxx</td>
+	<td></td>
+</tr>
+<tr class="failed">
+	<td>verifyTextNotPresent</td>
+	<td>test product 1 Aifonsss</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

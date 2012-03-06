@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_ScheduleTemplates_Function_EditTempName</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_ScheduleTemplates_Function_EditTempName</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/scheduletemplates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>ModifyCopyTmp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>ModifyTmp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=scheduleCol_schedule462Options</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=scheduleName</td>
+	<td>ModifyCopyTmp</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=scheduleOptionsPopup_OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ModifyCopyTmp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>ModifyTmp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ModifyCopyTmp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>ModifyTmp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=scheduleCol_schedule462Options</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=scheduleName</td>
+	<td>ModifyTmp</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=scheduleOptionsPopup_OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_ClassifyProducts_Function_DragAndDrop</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_ClassifyProducts_Function_DragAndDrop</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/classifyproducts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[@id='categoryCol_category228']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#categoryCol_subcategory229 &gt; div.itemContent.subCategoryBg &gt; div.handle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#categoryCol_category155 &gt; div.itemContent.categoryBg &gt; div.blockText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>dragAndDropToObject</td>
+	<td>css=#categoryCol_subcategory229 &gt; div.itemContent.subCategoryBg &gt; div.handle</td>
+	<td>css=#categoryCol_category155 &gt; div.itemContent.categoryBg &gt; div.blockText</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[@id='categoryCol_category155']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span[title=&quot;Setup Products&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Create Products</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=productSearchButton</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

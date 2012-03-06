@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_GroupMediaPlayers</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_GroupMediaPlayers</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/setupusersorgroups</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=userGroup_userGroupOptions173</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Group Media Players</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=groupMediaPlayersPermsChkBox</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=assignDevicesToGroups</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=renameDevices</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=groupMediaPlayersPermsChkBox</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=groupMediaPlayersPermsChkBox</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=assignDevicesToGroups</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=renameDevices</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=renameDevices</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=assignDevicesToGroups</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=renameDevices</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=assignDevicesToGroups</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=groupMediaPlayersPermsChkBox</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=okUserGroupOptions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#multipleUsers &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#userGroupOptions &gt; #userGroupOptions &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=userGroup_userGroupOptions173</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Group Media Players</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=groupMediaPlayersPermsChkBox</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=assignDevicesToGroups</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=renameDevices</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=okUserGroupOptions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#multipleUsers &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#userGroupOptions &gt; #userGroupOptions &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

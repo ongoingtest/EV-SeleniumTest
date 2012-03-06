@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_ScheduleLoops_ContentVerification_Help</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_ScheduleLoops_ContentVerification_Help</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/scheduleloop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='footer']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span</td>
+	<td>Help</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>First the attract loop needs scheduled before it is assigned to a Store. This is done by clicking on expander on the left side of the attract loop. Set the start and end date, the start and end time, and the days of the week.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>After the schedule is set on the attract loop. The attract loop can be applied to the Company, Store Group, or Store by clicking and dragging the attract loop to the group destination.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=pop-up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img.exit</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

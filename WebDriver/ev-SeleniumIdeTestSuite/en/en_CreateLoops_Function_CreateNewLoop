@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_CreateLoops_Function_CreateNewLoop</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_CreateLoops_Function_CreateNewLoop</td></tr>
+</thead><tbody>
+<!--Delete testLoop before testing.-->
+<tr>
+	<td>open</td>
+	<td>/ev/createloops</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>testLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.createNewLoop.commonButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=loopName</td>
+	<td>testLoop</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=attractLoopPopupOK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit.buttonStyle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>testLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>testLoop</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

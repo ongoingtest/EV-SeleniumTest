@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_ScheduleLoop_Function_EditLoopName</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_ScheduleLoop_Function_EditLoopName</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/scheduleloop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>EditNameOfLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>EditCopyLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[@id='scheduleCol_schedule478']/div/span[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=scheduleName</td>
+	<td>EditCopyLoop</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Schedule Loop Options</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Loop Name:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=scheduleName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=button.exit</td>
+	<td>Cancel</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=scheduleOptionsPopup_OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=scheduleOptionsPopup_OK</td>
+	<td>Save</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=scheduleOptionsPopup_OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>EditCopyLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>EditNameOfLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>EditCopyLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>EditNameOfLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[@id='scheduleCol_schedule478']/div/span[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=scheduleName</td>
+	<td>EditNameOfLoop</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=scheduleOptionsPopup_OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

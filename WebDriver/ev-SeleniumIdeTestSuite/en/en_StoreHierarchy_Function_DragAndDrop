@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_StoreHierarchy_Function_DragAndDrop</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_StoreHierarchy_Function_DragAndDrop</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/storehierarchy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//li[@id='hierarchy_company151']/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//li[@id='hierarchy_storeGroup154']/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//li[@id='hierarchy_store153']/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.blockText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>dragAndDropToObject</td>
+	<td>//li[@id='hierarchy_storeGroup154']/div/div</td>
+	<td>css=div.blockText</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//li[@id='hierarchy_storeGroup154']/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>dragAndDropToObject</td>
+	<td>//li[@id='hierarchy_store153']/div/div</td>
+	<td>//li[@id='hierarchy_storeGroup154']/div/div[2]</td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Group Media Players</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

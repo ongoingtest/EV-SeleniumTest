@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_ClassifyProducts_Function_CategoryOption</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_ClassifyProducts_Function_CategoryOption</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/classifyproducts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=categoryCol_category228Options</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=categoryName</td>
+	<td>apple</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=okExistingCategory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#subCategoryTabs &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#keywordTabs &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#existingCategoryTabs &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#existingSubcategoryTabs &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#existingKeywordTabs &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/ev/classifyproducts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#categoryCol_category228 &gt; div.itemContent.categoryBg &gt; div.blockText</td>
+	<td>apple</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=categoryCol_category228Options</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=categoryName</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=okExistingCategory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#subCategoryTabs &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#keywordTabs &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#existingCategoryTabs &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#existingSubcategoryTabs &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#existingKeywordTabs &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/ev/classifyproducts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#categoryCol_category228 &gt; div.itemContent.categoryBg &gt; div.blockText</td>
+	<td>test</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

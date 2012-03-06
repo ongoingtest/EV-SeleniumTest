@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="EV-Login">ev_Login_verifyElement</a></td></tr>
+<tr><td><a href="ev_Login_languageSelection">ev_Login_languageSelection</a></td></tr>
+<tr><td><a href="ev_Login_languageSelection_VerifyElements_En">ev_Login_languageSelection_VerifyElements_En</a></td></tr>
+<tr><td><a href="ev_Login_languageSelection_VerifyElements_zh">ev_Login_languageSelection_VerifyElements_zh</a></td></tr>
+<tr><td><a href="ev_Login_languageSelection_VerifyElements_de">ev_Login_languageSelection_VerifyElements_de</a></td></tr>
+<tr><td><a href="ev_Login_languageSelection_VerifyElements_nl">ev_Login_languageSelection_VerifyElements_nl</a></td></tr>
+<tr><td><a href="ev_Login_languageSelection_VerifyElements_fr">ev_Login_languageSelection_VerifyElements_fr</a></td></tr>
+<tr><td><a href="ev_Login_languageSelection_VerifyElements_it">ev_Login_languageSelection_VerifyElements_it</a></td></tr>
+<tr><td><a href="ev_Login_languageSelection_VerifyElements_ja">ev_Login_languageSelection_VerifyElements_ja</a></td></tr>
+<tr><td><a href="ev_Login_languageSelection_VerifyElements_pt">ev_Login_languageSelection_VerifyElements_pt</a></td></tr>
+<tr><td><a href="ev_Login_languageSelection_VerifyElements_ru">ev_Login_languageSelection_VerifyElements_ru</a></td></tr>
+<tr><td><a href="ev_Login_languageSelection_VerifyElements_es">ev_Login_languageSelection_VerifyElements_es</a></td></tr>
+<tr><td><a href="ev_Login_languageSelection_VerifyElements_tr">ev_Login_languageSelection_VerifyElements_tr</a></td></tr>
+<tr><td><a href="ev_Login_loginVerification">ev_Login_loginVerification</a></td></tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="en_ScheduleLoops_ContentVerification">en_ScheduleLoops_ContentVerification</a></td></tr>
+<tr><td><a href="en_ScheduleLoops_ContentVerification_Help">en_ScheduleLoops_ContentVerification_Help</a></td></tr>
+<tr><td><a href="en_ScheduleLoops_Function_DragAndDrop">en_ScheduleLoops_Function_DragAndDrop</a></td></tr>
+<tr><td><a href="en_ScheduleLoops_Function_EditLoopName">en_ScheduleLoop_Function_EditLoopName</a></td></tr>
+<tr><td><a href="en_ScheduleLoops_Function_Search">en_ScheduleLoop_Function_Search</a></td></tr>
+<tr><td><a href="en_ScheduleLoops_Function_EditTempSchedule2">en_ScheduleLoop_Function_EditTempSchedule2</a></td></tr>
+<tr><td><a href="en_ScheduleLoopss_Function_EditTempSchedule3">en_ScheduleLoop_Function_EditLoopSchedule3</a></td></tr>
+</tbody></table>
+</body>
+</html>

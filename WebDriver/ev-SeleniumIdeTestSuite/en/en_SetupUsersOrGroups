@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_ContentVerification">en_SetupUsersOrGroups_ContentVerification</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_ContentVerification_Help">en_SetupUsersOrGroups_ContentVerification_Help</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_Users_Search">en_SetupUsersOrGroups_Function_Users_Search</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_Users_CreateUsers">en_SetupUsersOrGroups_Function_Users_CreateUsers</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_Users_EditUsers">en_SetupUsersOrGroups_Function_Users_EditUsers</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UsersGroups_CreateGroups">en_SetupUsersOrGroups_Function_UsersGroups_CreateGroups</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UsersGroups_DuplicatedGroups">en_SetupUsersOrGroups_Function_UsersGroups_DuplicatedGroups</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UsersGroups_EditGroups">en_SetupUsersOrGroups_Function_UsersGroups_EditGroups</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UsersGroups_PermissionNames">en_SetupUsersOrGroups_Function_UsersGroups_PermissionNames</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_CreateAttractLoops">en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_Create Attract Loops</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_ScheduleTemplates">en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_ScheduleTemplates</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_TemplateStyle">en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_TemplateStyle</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_CreateProducts">en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_CreateProducts</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_MediaManager">en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_MediaManager</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_GroupMediaPlayers">en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_GroupMediaPlayers</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_NetworkManager">en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_NetworkManager</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_AssignAccessories">en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_AssignAccessories</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UserGroups_ChangePermissions_DefaultAttractLoop">en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_DefaultAttractLoop</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_StoreHierarchy">en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_StoreHierarchy</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_AssignPermissions">en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_AssignPermissions</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_CreateReports">en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_CreateReports</a></td></tr>
+<tr><td><a href="en_SetupUSersOrGroups_Function_UsersGroups_ChangePermissions_ScheduleLoops">en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_ScheduleLoops</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_ClassifyProducts">en_SetupUsersOrGroups_Function_UsersGroups_ChangePermissions_ClassifyProducts</a></td></tr>
+<tr><td><a href="en_SetupUsersOrGroups_Function_AssignUassignUserGroup">en_SetupUsersOrGroups_Function_AssignUassignUserGroup</a></td></tr>
+</tbody></table>
+</body>
+</html>

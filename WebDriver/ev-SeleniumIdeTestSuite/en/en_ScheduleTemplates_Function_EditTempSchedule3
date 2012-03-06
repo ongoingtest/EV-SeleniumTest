@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_ScheduleTemplates_Function_EditSchedule3</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_ScheduleTemplates_Function_EditSchedule3</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/scheduletemplates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[@id='scheduleCol_schedule193']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193allWeek</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Sun</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Mon</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Tues</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Wed</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Thur</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Schedule Templates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Sat</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=template193allWeek</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193allWeek</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Sun</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Mon</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Tues</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Wed</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Thur</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Fri</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Sat</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[@id='scheduleCol_schedule193']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193allWeek</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Sun</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Mon</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Tues</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Wed</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Thur</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Fri</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Sat</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=template193Sun</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=template193Mon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=template193Tues</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=template193Wed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=template193Thur</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=template193Fri</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=template193Sat</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Sat</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Fri</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Thur</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Wed</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Tues</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Mon</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Sun</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193allWeek</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#scheduleCol_schedule193 &gt; div.itemContent.templateBg &gt; span.fold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[@id='scheduleCol_schedule193']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Sat</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Fri</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Thur</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Wed</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Tues</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Mon</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193Sun</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=template193allWeek</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#scheduleCol_schedule193 &gt; div.itemContent.templateBg &gt; span.fold</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

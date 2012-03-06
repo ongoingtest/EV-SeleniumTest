@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_ClassifyProducts_ContentVerification</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_ClassifyProducts_ContentVerification</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/classifyproducts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.corporateLogo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Classify Products</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pageTitle</td>
+	<td>Classify Products</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Welcome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='header']/div[2]/div[2]/a/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Before you add products to the database we will need to define the product categories, sub categories and the keywords. This will help the system compare your apples to apples. After the class is created you will associate that class to a category and then create up to 10 keywords. Product keywords will be as defining in either absolute values or value ranges.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Start by adding your first product category, sub category and keyword below.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.columnHeaderText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.columnHeaderText</td>
+	<td>Product Categories, Sub Categories &amp; Keywords</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.blockText</td>
+	<td>New Product Category</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.itemContent.subCategoryBg &gt; div.blockText</td>
+	<td>New Product Sub Category</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.itemContent.keywordBg &gt; div.blockText</td>
+	<td>New Product Keyword</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.classificationCol &gt; div.columnHeader &gt; span.columnHeaderText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=categoryCol_category15Options</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=15</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=footer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='footer']/div</td>
+	<td>Help</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

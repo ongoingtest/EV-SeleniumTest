@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_CreateProducts_ContentVerification</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_CreateProducts_ContentVerification</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='header']/div[2]/div[2]/a/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=form.login</td>
+	<td>yrtest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=form.password</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.commonButton.login_ok</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/ev/index</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Create Products</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=productSearchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.corporateLogo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Create Products</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pageTitle</td>
+	<td>Create Products</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#welcomeTitle &gt; span</td>
+	<td>Welcome</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='header']/div[2]/div[2]/a/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.columnHeaderText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.columnHeaderText</td>
+	<td>Search Products</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Product Invue Database</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=productSearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=productSearchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Please Select a Product</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.blockText.selectedText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.bigDownArrow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#productDetailSpace &gt; div.columnHeader &gt; div</td>
+	<td>Save Preview Delete New</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=saveProduct</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=newProduct</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Setup Product or Accessory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Setup Product or Accessory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='productDetailSpace']/div/div[2]/label[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='productDetailSpace']/div/div[3]/div/span[2]</td>
+	<td>exact:Manufacturer:</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>--New Manufacturer--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=addManufacturer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='productDetailSpace']/div/div[3]/div[2]/span</td>
+	<td>exact:Category:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=detailCategory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>exact:Model:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>exact:SKU:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>exact:Price:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=detailModel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=detailSeries</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=detailPrice</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Product Image 1 (slide show)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#slideshowSection &gt; div.blockText</td>
+	<td>Product Image 1 (slide show)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2.mediaHeader</td>
+	<td>+ AddImage</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.mediaBackground.uploadImage</td>
+	<td>Drag and DropImage<br />from the Media list<br />4:3<br />720 px x 538 px<br />(or higher for best results)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#secondaryImageSection &gt; div.blockText</td>
+	<td>Product Image 2</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#staticImageAssign &gt; h2.mediaHeader</td>
+	<td>+ AddImage</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#videoSection &gt; div.blockText</td>
+	<td>Video</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.mediaBackground.uploadVideo &gt; span.spanText</td>
+	<td>Drag and DropVideo<br />from the Media list<br />16:9<br />1280 px x 720 px<br />(or higher for best results)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#descriptionSection &gt; div.blockText</td>
+	<td>Product Description</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#videoSection &gt; span.fold.unfolded</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#descriptionSection &gt; span.fold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.mceIcon.mce_bold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.mceIcon.mce_italic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.mceIcon.mce_justifyleft</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.mceIcon.mce_justifycenter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.mceIcon.mce_justifyright</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.mceIcon.mce_justifyfull</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.mceIcon.mce_bullist</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.mceIcon.mce_numlist</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#additionalTextSection &gt; div.blockText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#additionalTextSection &gt; span.fold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#detailAdditionalText_bold &gt; span.mceIcon.mce_bold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#detailAdditionalText_italic &gt; span.mceIcon.mce_italic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#detailAdditionalText_justifyleft &gt; span.mceIcon.mce_justifyleft</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#detailAdditionalText_justifycenter &gt; span.mceIcon.mce_justifycenter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#detailAdditionalText_justifyright &gt; span.mceIcon.mce_justifyright</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#detailAdditionalText_justifyfull &gt; span.mceIcon.mce_justifyfull</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#detailAdditionalText_bullist &gt; span.mceIcon.mce_bullist</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#detailAdditionalText_numlist &gt; span.mceIcon.mce_numlist</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#keywordsSection &gt; div.blockText</td>
+	<td>Keywords</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#keywordsSection &gt; span.fold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=#mediaSpace &gt; div.columnHeader</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#mediaSpace &gt; div.columnHeader &gt; span.columnHeaderText</td>
+	<td>Media</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=mediaSearchText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=mediaSearchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.uploadNewMedia.commonButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Upload New Media</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.uploadMediaButton.adder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=footer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.footerLogoImg &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='footer']/div</td>
+	<td>Help</td>
+</tr>
+</tbody></table>
+</body>
+</html>

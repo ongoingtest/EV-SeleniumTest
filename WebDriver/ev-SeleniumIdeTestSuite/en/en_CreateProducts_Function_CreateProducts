@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_CreateProducts_Function_CreateProducts</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_CreateProducts_Function_CreateProducts</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/createproducts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=newProduct</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=product</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>New Product</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=detailManufacturer</td>
+	<td>label=1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=detailCategory</td>
+	<td>label=test1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=detailModel</td>
+	<td>testabc</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=detailSeries</td>
+	<td>222</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=detailPrice</td>
+	<td>222</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#media_medium182 &gt; div.mediaBg.itemContent &gt; div.handle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>dragAndDropToObject</td>
+	<td>css=#media_medium182 &gt; div.mediaBg.itemContent &gt; div.handle</td>
+	<td>css=.detailMedia</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.mediaBackground</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.mediaBackground.uploadImage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#media_medium182 &gt; div.mediaBg.itemContent &gt; div.handle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>dragAndDropToObject</td>
+	<td>css=#media_medium182 &gt; div.mediaBg.itemContent &gt; div.handle</td>
+	<td>css=div.mediaBackground.uploadImage</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.mediaBackground</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#staticImageAssign &gt; div.mediaBackground.uploadImage &gt; span.spanText &gt; span.reso &gt; span.resoSize</td>
+	<td>720 px x 538 px</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#media_medium187 &gt; div.mediaBg.itemContent &gt; div.handle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=staticImageAssign</td>
+	<td></td>
+</tr>
+<tr>
+	<td>dragAndDropToObject</td>
+	<td>css=#media_medium187 &gt; div.mediaBg.itemContent &gt; div.handle</td>
+	<td>id=staticImageAssign</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#media_medium205 &gt; div.mediaBg.itemContent &gt; div.handle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.mediaBackground.uploadVideo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>dragAndDropToObject</td>
+	<td>css=#media_medium205 &gt; div.mediaBg.itemContent &gt; div.handle</td>
+	<td>css=div.mediaBackground.uploadVideo</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#videoDetail0 &gt; div.mediaBackground</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='descriptionSection']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=html</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mceIcon.mce_bold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mceIcon.mce_italic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mceIcon.mce_bold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mceIcon.mce_italic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mceIcon.mce_justifyleft</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mceIcon.mce_justifycenter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mceIcon.mce_justifyright</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mceIcon.mce_justifyfull</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mceIcon.mce_bullist</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mceIcon.mce_numlist</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='additionalTextSection']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=html</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detailAdditionalText_bold &gt; span.mceIcon.mce_bold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detailAdditionalText_bold &gt; span.mceIcon.mce_bold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detailAdditionalText_italic &gt; span.mceIcon.mce_italic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detailAdditionalText_justifyleft &gt; span.mceIcon.mce_justifyleft</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detailAdditionalText_justifycenter &gt; span.mceIcon.mce_justifycenter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detailAdditionalText_justifyright &gt; span.mceIcon.mce_justifyright</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detailAdditionalText_justifyfull &gt; span.mceIcon.mce_justifyfull</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detailAdditionalText_bullist &gt; span.mceIcon.mce_bullist</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detailAdditionalText_numlist &gt; span.mceIcon.mce_numlist</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='keywordsSection']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=keywordSelect0</td>
+	<td>label=sdf</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveProduct</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=previewProduct</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=deleteProduct</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Preview</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

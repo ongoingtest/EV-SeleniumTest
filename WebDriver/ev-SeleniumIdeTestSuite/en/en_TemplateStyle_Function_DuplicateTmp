@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_TemplateStyle_Function_DuplicateTmp</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_TemplateStyle_Function_DuplicateTmp</td></tr>
+</thead><tbody>
+<!--delete DuplicateCopyTmp before testing-->
+<tr>
+	<td>open</td>
+	<td>/ev/templatestyles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.blockText.selectedText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#templates_template466 &gt; div.itemContent.templateBg &gt; div.blockText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>DuplicateCopyTmp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>DuplicateTmp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=duplicateTemplate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=templateEditName</td>
+	<td>DuplicateCopyTmp</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=createTemplate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#renameTemplateOption &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>DuplicateCopyTmp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>DuplicateTmp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>DuplicateCopyTmp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>DuplicateTmp</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>Bug #2279</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Bug #2279</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/classifyproducts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.inputInfo</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=okCategory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.itemContent.keywordBg &gt; span.add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.inputInfo</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select.CategoryMenu</td>
+	<td>label=2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=rangeKeywordLowerValue</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=rangeKeywordUpperValue</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=okAddKeywordValue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=okKeyword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[@id='categoryCol_category258']/div/span[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>exact:Are you sure you want to remove the category 2&quot; ?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=popup_ok</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=popup_message</td>
+	<td>Failed to Delete Category:Internal Server Error</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=popup_ok</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[@id='categoryCol_category258']/div/span[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=popup_ok</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=popup_message</td>
+	<td>Failed to Delete Category:Current user is not allowed to modify this content</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=popup_ok</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

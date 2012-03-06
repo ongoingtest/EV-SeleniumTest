@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_ViewNetworkStatus_Function_Search</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_ViewNetworkStatus_Function_Search</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/viewnetworkstatus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test device 1 (store 15)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test device 1 (store 16)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectedFilterValue</td>
+	<td>label=Active</td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>test device 1 (store 15)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>test device 1 (store 16)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectedFilterValue</td>
+	<td>label=Inactive</td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>test device 1 (store 15)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test device 1 (store 16)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectedFilterValue</td>
+	<td>label=Defective</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test device 1 (store 15)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>test device 1 (store 16)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectedFilterValue</td>
+	<td>label=All Devices</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test device 1 (store 15)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test device 1 (store 16)</td>
+	<td></td>
+</tr>
+<!--Search by specific Keyword is not written here.-->
+
+</tbody></table>
+</body>
+</html>

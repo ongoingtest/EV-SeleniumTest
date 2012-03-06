@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_SetupUsersOrGroups_ContentVerification_Help</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_SetupUsersOrGroups_ContentVerification_Help</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/setupusersorgroups</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='footer']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span</td>
+	<td>Help</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Users are created by clicking the Create New User. Users can be assigned to User Groups by clicking and dragging the User to a User Group. <br /> User Groups are where permissions are set. User Groups can be assigned to all levels of the Store Groups. This can be done by clicking and dragging the User Group to the desired Store Group level. <br /> All three sections can be sorted and searched by using the search features found in the heading.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>User Groups are where permissions are set. User Groups can be assigned to all levels of the Store Groups. This can be done by clicking and dragging the User Group to the desired Store Group level.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>All three sections can be sorted and searched by using the search features found in the heading.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img.exit</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

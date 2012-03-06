@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_ViewNetworkStatus_ContentVerification_Help</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_ViewNetworkStatus_ContentVerification_Help</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/viewnetworkstatus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='footer']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=title</td>
+	<td>Help</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>This page displays the health of all media players. This includes:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li</td>
+	<td>DIB health</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='helpBody']/ul/li[2]</td>
+	<td>Active - Media player is communicating to the servers</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='helpBody']/ul/li[3]</td>
+	<td>Armed - All Secure display(s) is correctly connected</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Active - Media player is communicating to the servers</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=pop-up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img.exit</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

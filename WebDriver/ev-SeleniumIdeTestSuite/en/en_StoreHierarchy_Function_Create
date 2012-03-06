@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_StoreHierarchy_Function_Create</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_StoreHierarchy_Function_Create</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/storehierarchy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>testStoreGroup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>testCompany</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>testStore</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=newCompany</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Store Group/Company options</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>exact:Name:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=rename</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=b &gt; span</td>
+	<td>Change type:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label.labels</td>
+	<td>Store</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//span[@id='hierarchyItemTypeSelector']/label[2]</td>
+	<td>StoreGroup</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//span[@id='hierarchyItemTypeSelector']/label[3]</td>
+	<td>Company</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=amCompany</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=renameOK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=button.exit</td>
+	<td>Close</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=renameOK</td>
+	<td>Save</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=rename</td>
+	<td>testCompany</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=renameOK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>testCompany</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=newStoreGroup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span</td>
+	<td>Store Group/Company options</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.name</td>
+	<td>exact:Name:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=rename</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=b &gt; span</td>
+	<td>Change type:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//span[@id='hierarchyItemTypeSelector']/label[2]</td>
+	<td>StoreGroup</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=button.exit</td>
+	<td>Close</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=renameOK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=renameOK</td>
+	<td>Save</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=rename</td>
+	<td>testStoreGroup</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=renameOK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=newStore</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span</td>
+	<td>Store Group/Company options</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.name</td>
+	<td>exact:Name:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=rename</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.timeZone &gt; span</td>
+	<td>Time Zone:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=selectTimeZone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td</td>
+	<td>Day</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>Sun</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#storeHours_Monday &gt; td.storeHoursDayFields &gt; label</td>
+	<td>Mon</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#storeHours_Tuesday &gt; td.storeHoursDayFields &gt; label</td>
+	<td>Tues</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#storeHours_Wednesday &gt; td.storeHoursDayFields &gt; label</td>
+	<td>Wed</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#storeHours_Thursday &gt; td.storeHoursDayFields &gt; label</td>
+	<td>Thur</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#storeHours_Friday &gt; td.storeHoursDayFields &gt; label</td>
+	<td>Fri</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#storeHours_Saturday &gt; td.storeHoursDayFields &gt; label</td>
+	<td>Sat</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='storeHoursOptionsInsidePopup']/table/tbody/tr/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storeHoursOptionsInsidePopup']/table/tbody/tr/td[2]</td>
+	<td>Power Up</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='storeHoursOptionsInsidePopup']/table/tbody/tr/td[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storeHoursOptionsInsidePopup']/table/tbody/tr/td[3]</td>
+	<td>Opening Hours</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='storeHoursOptionsInsidePopup']/table/tbody/tr/td[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storeHoursOptionsInsidePopup']/table/tbody/tr/td[4]</td>
+	<td>Closing Hours</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='storeHoursOptionsInsidePopup']/table/tbody/tr/td[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storeHoursOptionsInsidePopup']/table/tbody/tr/td[5]</td>
+	<td>Power Down</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_powerUp_Sunday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_powerUp_Monday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_powerUp_Tuesday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_powerUp_Wednesday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_powerUp_Thursday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_powerUp_Friday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_powerUp_Saturday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_openingHours_Sunday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_openingHours_Monday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_openingHours_Tuesday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_openingHours_Wednesday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_openingHours_Thursday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_openingHours_Friday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_openingHours_Saturday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_closingHours_Sunday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_closingHours_Monday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_closingHours_Tuesday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_closingHours_Wednesday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_closingHours_Thursday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_closingHours_Friday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_closingHours_Saturday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Store Hierarchy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Store Hierarchy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_powerDown_Sunday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_powerDown_Monday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_powerDown_Tuesday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_powerDown_Wednesday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_powerDown_Thursday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_powerDown_Friday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=storeHours_powerDown_Saturday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.timeEntry_control</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.timeEntry_wrap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#storeHours_Monday &gt; td.storeHoursFields &gt; span.timeEntry_wrap &gt; span.timeEntry_control</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#storeHours_Wednesday &gt; td.storeHoursFields &gt; span.timeEntry_wrap &gt; span.timeEntry_control</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#storeHours_Thursday &gt; td.storeHoursFields &gt; span.timeEntry_wrap &gt; span.timeEntry_control</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#storeHours_Friday &gt; td.storeHoursFields &gt; span.timeEntry_wrap &gt; span.timeEntry_control</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#storeHours_Saturday &gt; td.storeHoursFields &gt; span.timeEntry_wrap &gt; span.timeEntry_control</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Sunday']/td[3]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Monday']/td[3]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Tuesday']/td[3]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Wednesday']/td[3]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Thursday']/td[3]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Friday']/td[3]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Saturday']/td[3]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Sunday']/td[4]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Monday']/td[4]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Tuesday']/td[4]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Wednesday']/td[4]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Thursday']/td[4]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Friday']/td[4]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Saturday']/td[4]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Sunday']/td[5]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#storeHours_Tuesday &gt; td.storeHoursFields &gt; span.timeEntry_wrap &gt; span.timeEntry_control</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Monday']/td[5]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Tuesday']/td[5]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Wednesday']/td[5]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Thursday']/td[5]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Friday']/td[5]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@id='storeHours_Saturday']/td[5]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=repeatStoreHourRow_Sunday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=repeatStoreHourRow_Sunday</td>
+	<td>repeat</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=repeatStoreHourRow_Monday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=repeatStoreHourRow_Monday</td>
+	<td>repeat</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=repeatStoreHourRow_Tuesday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=repeatStoreHourRow_Tuesday</td>
+	<td>repeat</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=repeatStoreHourRow_Wednesday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=repeatStoreHourRow_Wednesday</td>
+	<td>repeat</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=repeatStoreHourRow_Thursday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=repeatStoreHourRow_Thursday</td>
+	<td>repeat</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=repeatStoreHourRow_Friday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=repeatStoreHourRow_Friday</td>
+	<td>repeat</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=repeatStoreHourRow_Saturday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=b &gt; span</td>
+	<td>Change type:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label.labels</td>
+	<td>Store</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//span[@id='hierarchyItemTypeSelector']/label[2]</td>
+	<td>StoreGroup</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//span[@id='hierarchyItemTypeSelector']/label[3]</td>
+	<td>Company</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=button.exit</td>
+	<td>Close</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=renameOK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=renameOK</td>
+	<td>Save</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=hr</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='pop-up']/div[2]/div/hr[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=rename</td>
+	<td>testStore</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectTimeZone</td>
+	<td>label=(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=storeHours_powerUp_Sunday</td>
+	<td>01:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=storeHours_openingHours_Sunday</td>
+	<td>03:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=storeHours_closingHours_Sunday</td>
+	<td>06:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=storeHours_powerDown_Sunday</td>
+	<td>09:00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=repeatStoreHourRow_Sunday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_powerUp_Sunday</td>
+	<td>exact:01:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_powerUp_Monday</td>
+	<td>exact:01:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_powerUp_Tuesday</td>
+	<td>exact:01:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_powerUp_Wednesday</td>
+	<td>exact:01:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_powerUp_Thursday</td>
+	<td>exact:01:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_powerUp_Friday</td>
+	<td>exact:01:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_powerUp_Saturday</td>
+	<td>exact:01:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_openingHours_Sunday</td>
+	<td>exact:03:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_openingHours_Monday</td>
+	<td>exact:03:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_openingHours_Tuesday</td>
+	<td>exact:03:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_openingHours_Wednesday</td>
+	<td>exact:03:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_openingHours_Thursday</td>
+	<td>exact:03:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_openingHours_Friday</td>
+	<td>exact:03:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_openingHours_Saturday</td>
+	<td>exact:03:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_closingHours_Sunday</td>
+	<td>exact:06:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_closingHours_Monday</td>
+	<td>exact:06:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_closingHours_Tuesday</td>
+	<td>exact:06:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_closingHours_Wednesday</td>
+	<td>exact:06:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_closingHours_Thursday</td>
+	<td>exact:06:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_closingHours_Friday</td>
+	<td>exact:06:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_closingHours_Saturday</td>
+	<td>exact:06:00</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Store Hierarchy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_powerDown_Monday</td>
+	<td>exact:09:00</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=storeHours_powerDown_Tuesday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_powerDown_Tuesday</td>
+	<td>exact:09:00</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=storeHours_powerDown_Wednesday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=storeHours_powerDown_Wednesday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_powerDown_Wednesday</td>
+	<td>exact:09:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_powerDown_Thursday</td>
+	<td>exact:09:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_powerDown_Friday</td>
+	<td>exact:09:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_powerDown_Saturday</td>
+	<td>exact:09:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=storeHours_powerDown_Sunday</td>
+	<td>09:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=storeHours_powerDown_Sunday</td>
+	<td>exact:09:00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=renameOK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>testStoreGroup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>testCompany</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>testStore</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>testStoreGroup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>testCompany</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>testStore</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_TemplateStyle_Function_CreateTemplates</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_TemplateStyle_Function_CreateTemplates</td></tr>
+</thead><tbody>
+<!--Delete CreateTmp before testing-->
+<tr>
+	<td>open</td>
+	<td>/ev/templatestyles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>CreateTmp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=newTemplate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span</td>
+	<td>Create New Template</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.pop-up-body &gt; span</td>
+	<td>exact:Name:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=templateEditName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=touchPopup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=touchPopup</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=nontouchPopup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=nontouchPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='pop-up']/div[2]/div/label[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=buttonLeftPopup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonLeftPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img[alt=&quot;Left&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=buttonTopPopup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonTopPopup</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img[alt=&quot;Top&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=buttonBottomPopup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonBottomPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img[alt=&quot;Bottom&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=buttonRightPopup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonRightPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img[alt=&quot;Right&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=button.exit</td>
+	<td>Cancel</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=createTemplate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=createTemplate</td>
+	<td>Save</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=templateEditName</td>
+	<td>CreateTmp</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=buttonLeftPopup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonLeftPopup</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonTopPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonBottomPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonRightPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=buttonTopPopup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonLeftPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonTopPopup</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonBottomPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonRightPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=buttonBottomPopup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonLeftPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonTopPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonBottomPopup</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonRightPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=buttonRightPopup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonLeftPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonTopPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonBottomPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonRightPopup</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=nontouchPopup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=touchPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=nontouchPopup</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonTopPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonBottomPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img[alt=&quot;Top&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img[alt=&quot;Bottom&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=buttonTopPopup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonTopPopup</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonBottomPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=buttonBottomPopup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonTopPopup</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=buttonBottomPopup</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=touchPopup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=createTemplate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#renameTemplateOption &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>CreateTmp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>CreateTmp</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

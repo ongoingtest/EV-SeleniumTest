@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_Index_HelpContent</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_Index_HelpContent</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/index</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='footer']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span</td>
+	<td>Help</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Welcome to EV</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>The links on the left side of the page help you navigate through the system. Below is a list of the links and a brief description of what they do.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Manage In-Store Display - Modify products on display</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Create Reports - Run reports on the log files uploaded by the media players</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Upload Media - Where all media files are managed and grouped</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Setup Products - Create products and accessories. Also where accessories are assigned to products</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Setup Users - Create additional users to log into the system</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Setup Stores/Structure - Create the company hierarchy and assign media players to groups</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Setup Templates - Design multiple layouts of the products and accessories on display. Also schedule templates to the store hierarchy.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Setup Templates - Design multiple layouts of the products and accessories on display. Also schedule templates to the store hierarchy.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Setup Attract Loops - Compile videos into attract loops and schedule the attract loops to all or specific locations.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>View Network Status - View media player health from the Post being coded to the media player being connected to the internet.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Help - View helpful documents for each page of the EV system</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span[title=&quot;Manage InStore Display&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add Products to Posts</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

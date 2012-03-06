@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_ScheduleLoop_Function_Search</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_ScheduleLoop_Function_Search</td></tr>
+</thead><tbody>
+<!--This is manually test pass!-->
+<tr>
+	<td>open</td>
+	<td>/ev/scheduleloop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>DragAndDrop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>EditNameOfLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>ScheduleEditLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>ScheduleLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>testLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=filterSchedule</td>
+	<td>te</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>testLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>DragAndDrop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>EditNameOfLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>ScheduleEditLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>ScheduleLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=filterSchedule</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>DragAndDrop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>EditNameOfLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>ScheduleEditLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>ScheduleLoop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>testLoop</td>
+	<td></td>
+</tr>
+<!--Now it's Store Hierarchy-->
+<tr>
+	<td>verifyTextPresent</td>
+	<td>sssss</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>aaa</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=filterStore</td>
+	<td>loop</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>sssss</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>aaa</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.itemContent.companyBg &gt; span.fold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.itemContent.storeGroupBg &gt; span.fold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#hierarchy_storeGroup199 &gt; div.itemContent.storeGroupBg &gt; span.fold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.itemContent.companyBg &gt; span.fold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.itemContent.storeGroupBg &gt; span.fold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#hierarchy_storeGroup202 &gt; div.itemContent.storeGroupBg &gt; span.fold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=filterStore</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

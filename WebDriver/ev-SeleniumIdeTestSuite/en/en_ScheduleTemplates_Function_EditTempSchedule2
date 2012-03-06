@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_ScheduleTemplates_Function_EditTempSchedule2</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_ScheduleTemplates_Function_EditTempSchedule2</td></tr>
+</thead><tbody>
+<!--Test Case not completed.-->
+<tr>
+	<td>verifyValue</td>
+	<td>id=scheduleCol_schedule193startDate</td>
+	<td>03/01/2012</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=scheduleCol_schedule193startDate</td>
+	<td>03/05/2012</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=scheduleCol_schedule193endDate</td>
+	<td>03/30/2012</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=25</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=scheduleCol_schedule193endDate</td>
+	<td>03/25/2012</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=scheduleCol_schedule193startTime</td>
+	<td>exact:00:00:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=scheduleCol_schedule193endTime</td>
+	<td>exact:23:00:00</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=scheduleCol_schedule193startTime</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=scheduleCol_schedule193startTime</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>id=scheduleCol_schedule193startTime</td>
+	<td>6</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

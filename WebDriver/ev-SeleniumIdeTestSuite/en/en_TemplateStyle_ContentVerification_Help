@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_TemplateStyle_ContentVerification_Help</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_TemplateStyle_ContentVerification_Help</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/templatestyles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='footer']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span</td>
+	<td>Help</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Template styles is where templates are created, edited, duplicated and deleted. <br /> Templates can be identified as either Touch or Non-touch by selecting either radio button. <br /> To select a previous template, Use the Select a Template dropdown. <br /> To edit fields, Double click within the field to change settings such as background colors, fonts, etc... <br /> You can search through the templates by using the Search Templates utility in the header.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Templates can be identified as either Touch or Non-touch by selecting either radio button.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>To select a previous template, Use the Select a Template dropdown.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>To edit fields, Double click within the field to change settings such as background colors, fonts, etc...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>You can search through the templates by using the Search Templates utility in the header.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img.exit</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_CreateLoops_ContentVerification</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_CreateLoops_ContentVerification</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/createloops</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.corporateLogo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.corporateLogo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=pageTitle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pageTitle</td>
+	<td>Create Loops</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#welcomeTitle &gt; span</td>
+	<td>Welcome</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='header']/div[2]/div[2]/a/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='header']/div[2]/div[2]/a/button</td>
+	<td>Logout</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Manage InStore Display</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Create Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Upload Media</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Setup Products</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Setup Users/Groups</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Setup Stores/Structure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Setup Templates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Setup Attract Loops</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>View Network Status</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.columnHeader</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.columnHeaderText</td>
+	<td>Video Media</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=filterMediaText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.searchIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='body']/div[2]/div/div[2]/div</td>
+	<td>Upload New Video</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='body']/div[2]/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='body']/div[2]/div/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.blockText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.play</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=video_videoDelete184</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.attractLoopColumn &gt; div.columnHeader &gt; span.columnHeaderText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.attractLoopColumn &gt; div.columnHeader &gt; span.columnHeaderText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=filterLoopValue</td>
+	<td>Media Attract Loops</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=filterLoopText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.attractLoopColumn &gt; div.columnHeader &gt; span.searchIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.createNewLoop.commonButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.createNewLoop.commonButton</td>
+	<td>Create New Loop</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.newLoopButton.adder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.newLoopButton.adder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=footer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='footer']/div</td>
+	<td>Help</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

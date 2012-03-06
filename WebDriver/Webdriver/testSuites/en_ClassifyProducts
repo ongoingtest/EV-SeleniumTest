@@ -1,0 +1,274 @@
+#This test suites contains following aspects:
+#1)Contention Verification: This is to test if all the elements are in that page and no picture etc missing.
+#2)Test the content for 'Help' is complete;
+#3)Test the add element function(create category, subcategory, keywords)
+#4)Test the function of modifying the name of category,subcategory and keywords
+#5)Test the Drag And Drop function
+#6)Please note: Deleting testing is not been implemented in this test. After testing, please delete the newly created items.
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver import ActionChains
+import unittest, time, re
+import HTMLTestRunner
+from Webdriver.all_globals import *
+
+class EnClassifyProducts(unittest.TestCase):
+    def setUp(self):
+        gb_setUp(self)
+    
+    def test_en_classify_products_content_verification(self):
+        driver = self.driver
+        gb_login(self)
+        driver.get(self.base_url + "/ev/classifyproducts")
+        gb_frame(self)
+        try: self.assertEqual("", driver.find_element_by_css_selector("div.corporateLogo").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual("Classify Products", driver.title)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual("Classify Products", driver.find_element_by_id("pageTitle").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual("", driver.find_element_by_css_selector("div.corporateLogo").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertTrue(self.is_element_present(By.XPATH, "//div[@id='header']/div[2]/div[2]/a/button"))
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertTrue(self.is_element_present(By.ID, "welcomeTitle"))
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertIn(u"Before you add products to the database we will need to define the product categories, sub categories and the keywords. This will help the system compare your apples to apples. After the class is created you will associate that class to a category and then create up to 10 keywords. Product keywords will be as defining in either absolute values or value ranges.", driver.find_element_by_class_name("categoryCol").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertTrue(self.is_element_present(By.CSS_SELECTOR, "span.columnHeaderText"))
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual("Product Categories, Sub Categories & Keywords", driver.find_element_by_css_selector("span.columnHeaderText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual("New Product Category", driver.find_element_by_css_selector("div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual("New Product Sub Category", driver.find_element_by_css_selector("div.itemContent.subCategoryBg > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual("New Product Keyword", driver.find_element_by_css_selector("div.itemContent.keywordBg > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertTrue(self.is_element_present(By.CSS_SELECTOR, "span.add"))
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertTrue(u"Product Classifications", driver.find_element_by_css_selector("div.classificationCol > div.columnHeader > span.columnHeaderText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertTrue(self.is_element_present(By.ID, "categoryCol_category155Options"))
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertTrue(self.is_element_present(By.ID, "155"))
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertTrue(self.is_element_present(By.CSS_SELECTOR, "img"))
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertTrue(self.is_element_present(By.ID, "footer"))
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual("Help", driver.find_element_by_xpath("//div[@id='footer']/div").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+
+    def test_en_classify_products_content_verification_help(self):
+        driver = self.driver
+        gb_login(self)
+        driver.get(self.base_url + "/ev/classifyproducts")
+        driver.find_element_by_xpath("//div[@id='footer']/div").click()
+        try: self.assertTrue(self.is_element_present(By.CSS_SELECTOR, "span"))
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertIn(u"This is where Categories for products are created. Along with subcategories and Keywords.", driver.find_element_by_id("helpBody").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertIn(u"To create Categories and keywords, click on the plus sign to the right of the selection. Once an item is created, it will appear under the Products section.", driver.find_element_by_id("helpBody").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        driver.find_element_by_css_selector("img.exit").click()
+
+    def test_en_classify_products_function_category_option(self):
+        driver = self.driver
+        gb_login(self)
+        driver.get(self.base_url + "/ev/classifyproducts")
+        try: self.assertNotEqual(u"apple", driver.find_element_by_css_selector("#categoryCol_category155 > div.itemContent.categoryBg > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual(u"test", driver.find_element_by_css_selector("#categoryCol_category155 > div.itemContent.categoryBg > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        driver.find_element_by_id("categoryCol_category155Options").click()
+        driver.find_element_by_id("categoryName").clear()
+        driver.find_element_by_id("categoryName").send_keys(u"apple")
+        driver.find_element_by_id("okExistingCategory").click()
+        driver.refresh
+        for i in range(60):
+            try:
+                if u"apple" == driver.find_element_by_css_selector("#categoryCol_category155 > div.itemContent.categoryBg > div.blockText").text: break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        try: self.assertNotEqual(u"test", driver.find_element_by_css_selector("#categoryCol_category155 > div.itemContent.categoryBg > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual(u"apple", driver.find_element_by_css_selector("#categoryCol_category155 > div.itemContent.categoryBg > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        driver.find_element_by_id("categoryCol_category155Options").click()
+        driver.find_element_by_id("categoryName").clear()
+        driver.find_element_by_id("categoryName").send_keys(u"test")
+        driver.find_element_by_id("okExistingCategory").click()
+        for i in range(60):
+            try:
+                if u"test" == driver.find_element_by_css_selector("#categoryCol_category155 > div.itemContent.categoryBg > div.blockText").text: break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        try: self.assertNotEqual(u"apple", driver.find_element_by_css_selector("#categoryCol_category155 > div.itemContent.categoryBg > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual(u"test", driver.find_element_by_css_selector("#categoryCol_category155 > div.itemContent.categoryBg > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+
+    def test_en_classify_products_function_sub_option(self):
+        driver = self.driver
+        gb_login(self)
+        driver.get(self.base_url + "/ev/classifyproducts")
+        driver.find_element_by_xpath("//li[@id='categoryCol_category155']/div/span").click()
+        try: self.assertNotEqual(u"apple", driver.find_element_by_css_selector("#categoryCol_subcategory156 > div.itemContent.subCategoryBg > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual(u"testSub", driver.find_element_by_css_selector("#categoryCol_subcategory156 > div.itemContent.subCategoryBg > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        driver.find_element_by_id("categoryCol_subcategory156Options").click()
+        driver.find_element_by_id("subcategoryName").clear()
+        driver.find_element_by_id("subcategoryName").send_keys(u"apple")
+        driver.find_element_by_id("okExistingSubCategory").click()
+        driver.refresh
+        for i in range(60):
+            try:
+                if u"apple" == driver.find_element_by_css_selector("#categoryCol_subcategory156 > div.itemContent.subCategoryBg > div.blockText").text: break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        try: self.assertNotEqual(u"testSub", driver.find_element_by_css_selector("#categoryCol_subcategory156 > div.itemContent.subCategoryBg > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual(u"apple", driver.find_element_by_css_selector("#categoryCol_subcategory156 > div.itemContent.subCategoryBg > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        #driver.find_element_by_xpath("//li[@id='categoryCol_category155']/div/span").click()
+        driver.find_element_by_id("categoryCol_subcategory156Options").click()
+        driver.find_element_by_id("subcategoryName").clear()
+        driver.find_element_by_id("subcategoryName").send_keys(u"testSub")
+        driver.find_element_by_id("okExistingSubCategory").click()
+        for i in range(60):
+            try:
+                if u"testSub" == driver.find_element_by_css_selector("#categoryCol_subcategory156 > div.itemContent.subCategoryBg > div.blockText").text: break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        try: self.assertNotEqual(u"apple", driver.find_element_by_css_selector("#categoryCol_subcategory156 > div.itemContent.subCategoryBg > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual(u"testSub", driver.find_element_by_css_selector("#categoryCol_subcategory156 > div.itemContent.subCategoryBg > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+
+    def test_en_classify_products_function_keyword_option(self):
+        driver = self.driver
+        gb_login(self)
+        driver.get(self.base_url + "/ev/classifyproducts")
+        driver.find_element_by_xpath("//li[@id='categoryCol_category155']/div/span").click()
+        try: self.assertNotEqual(u"apple", driver.find_element_by_css_selector("#categoryCol_keyword209 > div.keywordBg.itemContent > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual(u"testKey", driver.find_element_by_css_selector("#categoryCol_keyword209 > div.keywordBg.itemContent > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        driver.find_element_by_xpath("//li[@id='categoryCol_keyword209']/div/span[2]").click()
+        driver.find_element_by_id("keywordName").clear()
+        driver.find_element_by_id("keywordName").send_keys(u"apple")
+        driver.find_element_by_id("okExistingKeyword").click()
+        driver.refresh
+        for i in range(60):
+            try:
+                if u"apple" == driver.find_element_by_css_selector("#categoryCol_keyword209 > div.keywordBg.itemContent > div.blockText").text: break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        try: self.assertNotEqual(u"testKey", driver.find_element_by_css_selector("#categoryCol_keyword209 > div.keywordBg.itemContent > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual(u"apple", driver.find_element_by_css_selector("#categoryCol_keyword209 > div.keywordBg.itemContent > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        #driver.find_element_by_xpath("//li[@id='categoryCol_category155']/div/span").click()
+        driver.find_element_by_xpath("//li[@id='categoryCol_keyword209']/div/span[2]").click()
+        driver.find_element_by_id("keywordName").clear()
+        driver.find_element_by_id("keywordName").send_keys(u"testKey")
+        driver.find_element_by_id("okExistingKeyword").click()
+        for i in range(60):
+            try:
+                if u"testKey" == driver.find_element_by_css_selector("#categoryCol_keyword209 > div.keywordBg.itemContent > div.blockText").text: break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        try: self.assertNotEqual(u"apple", driver.find_element_by_css_selector("#categoryCol_keyword209 > div.keywordBg.itemContent > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertEqual(u"testKey", driver.find_element_by_css_selector("#categoryCol_keyword209 > div.keywordBg.itemContent > div.blockText").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+
+    def test_en_classify_products_function_add_element(self):
+        driver = self.driver
+        gb_login(self)
+        driver.get(self.base_url + "/ev/classifyproducts")
+#Verify if the Category, Subcategory and keyword successfully created by checking the name.
+        driver.find_element_by_xpath("//li[@id='categoryCol_category522']/div/span").click()
+        try: self.assertNotIn("NewCat", driver.find_element_by_id("categoryBrowser").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertNotIn("newSubCat", driver.find_element_by_id("categoryBrowser").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertNotIn("NewKey", driver.find_element_by_id("categoryBrowser").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        driver.find_element_by_css_selector("span.add").click()
+        driver.find_element_by_css_selector("input.inputInfo").clear()
+        driver.find_element_by_css_selector("input.inputInfo").send_keys("NewCat")
+        driver.find_element_by_id("okCategory").click()
+        driver.find_element_by_css_selector("div.itemContent.subCategoryBg > span.add").click()
+        driver.find_element_by_css_selector("input.inputInfo").clear()
+        driver.find_element_by_css_selector("input.inputInfo").send_keys("newSubCat")
+        Select(driver.find_element_by_css_selector("select.CategoryMenu")).select_by_visible_text("AddElements")
+        driver.find_element_by_id("okSubcategory").click()
+        driver.find_element_by_css_selector("div.itemContent.keywordBg > span.add").click()
+        driver.find_element_by_css_selector("input.inputInfo").clear()
+        driver.find_element_by_css_selector("input.inputInfo").send_keys("NewKey")
+        Select(driver.find_element_by_css_selector("select.CategoryMenu")).select_by_visible_text("AddElements")
+        #Select(driver.find_element_by_css_selector("select.SubcategoryMenu")).select_by_visible_text("AddElementsSub")
+        driver.find_element_by_id("rangeKeywordLowerValue").clear()
+        driver.find_element_by_id("rangeKeywordLowerValue").send_keys("1")
+        driver.find_element_by_id("rangeKeywordUpperValue").clear()
+        driver.find_element_by_id("rangeKeywordUpperValue").send_keys("2")
+        driver.find_element_by_id("okAddKeywordValue").click()
+        driver.find_element_by_id("okKeyword").click()
+
+    def test_en_classify_products_function_drag_and_drop(self):
+        driver = self.driver
+        gb_login(self)
+        driver.get(self.base_url + "/ev/classifyproducts")
+        driver.find_element_by_xpath("//li[@id='categoryCol_category514']/div/span").click()
+#Verify process missing.
+        try: self.assertTrue(self.is_element_present(By.CSS_SELECTOR, "#categoryCol_subcategory515 > div.itemContent.subCategoryBg > div.handle"))
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertTrue(self.is_element_present(By.CSS_SELECTOR, "#categoryCol_category517 > div.categoryBg.itemContent > div.blockText"))
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        element = driver.find_element_by_css_selector("#categoryCol_subcategory515 > div.itemContent.subCategoryBg > div.handle")
+        target = driver.find_element_by_css_selector("#categoryCol_category517 > div.categoryBg.itemContent > div.blockText")
+        action_chains = ActionChains(driver)
+        action_chains.drag_and_drop(element, target);
+    
+    def is_element_present(self, how, what):
+        try: self.driver.find_element(by=how, value=what)
+        except NoSuchElementException, e: return False
+        return True
+    
+    def tearDown(self):
+        self.driver.quit()
+        self.assertEqual([], self.verificationErrors)
+
+if __name__ == "__main__":
+    testsuite = unittest.TestSuite()
+
+    testsuite.addTest(EnClassifyProducts("test_en_classify_products_content_verification"))
+    testsuite.addTest(EnClassifyProducts("test_en_classify_products_content_verification_help"))
+    testsuite.addTest(EnClassifyProducts("test_en_classify_products_function_category_option"))
+    testsuite.addTest(EnClassifyProducts("test_en_classify_products_function_sub_option"))
+    testsuite.addTest(EnClassifyProducts("test_en_classify_products_function_keyword_option"))
+    testsuite.addTest(EnClassifyProducts("test_en_classify_products_function_add_element"))
+    testsuite.addTest(EnClassifyProducts("test_en_classify_products_function_drag_and_drop"))
+
+
+    filename = '/home/zignage/seleniumTest/WebDriver/result/ClassifyProducts.html'
+    fp = file(filename,'wb')
+
+    runner = HTMLTestRunner.HTMLTestRunner(
+            stream=fp,
+            title='Test Result',
+            description='Test Report'
+            )
+ #   runner = unittest.TextTestRunner()
+    runner.run(testsuite)

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_UploadMedia_ContentVerification</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_UploadMedia_ContentVerification</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/uploadmedia</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.corporateLogo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Upload Media</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pageTitle</td>
+	<td>Upload Media</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Welcome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.columnHeader</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.columnHeaderText</td>
+	<td>Media</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=filterMedia</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=sortMedia</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=sortMedia</td>
+	<td>--Sort-- Sort by Name Sort by Type Sort by Size Sort by Date Assigned Unassigned</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=filterMediaText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.searchIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='mediaSpace']/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='mediaSpace']/div[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.handle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=media_medium184Options</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#mediaGroupSpace &gt; div.columnHeader &gt; span.columnHeaderText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#mediaGroupSpace &gt; div.columnHeader &gt; span.columnHeaderText</td>
+	<td>Media Group</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.createNewMediaGroup.commonButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.createNewMediaGroup.commonButton</td>
+	<td>Create New Media Group</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.newMediaGroupButton.adder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=mediaGroup_mediaGroupDelete179</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=mediaGroup_mediaGroup179Options</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.mediaGroupBg.itemContent &gt; div.blockText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.fold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[@id='mediaGroup_mediaGroup179']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#mediaGroup_medium178 &gt; div.mediaBg.itemContent &gt; div.handle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=mediaGroup_mediumDelete178</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#mediaGroup_medium178 &gt; div.mediaBg.itemContent &gt; div.blockText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=footer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='footer']/div</td>
+	<td>Help</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=media_mediumDelete184</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

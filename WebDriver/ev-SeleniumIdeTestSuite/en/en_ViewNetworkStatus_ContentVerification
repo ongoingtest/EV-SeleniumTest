@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_ViewNetworkStatus_ContentVerification</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_ViewNetworkStatus_ContentVerification</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/viewnetworkstatus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.corporateLogo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=pageTitle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pageTitle</td>
+	<td>View Network Status</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#welcomeTitle &gt; span</td>
+	<td>Welcome</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='header']/div[2]/div[2]/a/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='header']/div[2]/div[2]/a/button</td>
+	<td>Logout</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.columnHeader</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.columnHeaderText</td>
+	<td>Search</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>All Devices Active Inactive Defective</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=filterText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.searchIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.blockText.selectedText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>All Devices</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.bigDownArrow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.deviceBg.itemContent &gt; span.fold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.play.inactive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test device 1 (store 15)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//li[@id='devices_device27']/div/span[5]/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.resetPassword &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.resetPassword &gt; button</td>
+	<td>Reset Password</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=lock_unlock_device27</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=footer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='footer']/div</td>
+	<td>Help</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

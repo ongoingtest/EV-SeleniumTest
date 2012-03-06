@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_ScheduleTemplates_ContentVerification</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_ScheduleTemplates_ContentVerification</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/templatestyles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span[title=&quot;Setup Templates&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Schedule Templates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.corporateLogo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=pageTitle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pageTitle</td>
+	<td>Schedule Templates</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#welcomeTitle &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#welcomeTitle &gt; span</td>
+	<td>Welcome</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='header']/div[2]/div[2]/a/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='header']/div[2]/div[2]/a/button</td>
+	<td>Logout</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span[title=&quot;Manage InStore Display&quot;]</td>
+	<td>Manage InStore Display</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span[title=&quot;Create Reports&quot;]</td>
+	<td>Create Reports</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span[title=&quot;Upload Media&quot;]</td>
+	<td>Upload Media</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span[title=&quot;Setup Products&quot;]</td>
+	<td>Setup Products</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span[title=&quot;Setup Users/Groups&quot;]</td>
+	<td>Setup Users/Groups</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span[title=&quot;Setup Stores/Structure&quot;]</td>
+	<td>Setup Stores/Structure</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span[title=&quot;Setup Templates&quot;]</td>
+	<td>Setup Templates</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span[title=&quot;Setup Attract Loops&quot;]</td>
+	<td>Setup Attract Loops</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span[title=&quot;Setup Attract Loops&quot;]</td>
+	<td>Setup Attract Loops</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span[title=&quot;View Network Status&quot;]</td>
+	<td>View Network Status</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.columnHeader</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.columnHeaderText</td>
+	<td>Templates</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=filterTemplateText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.searchIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=scheduleCol_schedule193Options</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#scheduleCol_schedule193 &gt; div.itemContent.templateBg &gt; span.fold</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.storesColumn &gt; div.columnHeader</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.storesColumn &gt; div.columnHeader &gt; span.columnHeaderText</td>
+	<td>Store Hierarchy</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=filterStoreText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.storesColumn &gt; div.columnHeader &gt; span.searchArea &gt; span.searchBody &gt; span.searchIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='scroll'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=scroll</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=footer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='footer']/div</td>
+	<td>Help</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

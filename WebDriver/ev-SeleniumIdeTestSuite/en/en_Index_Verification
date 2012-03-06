@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_Index_Verification</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_Index_Verification</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=form.login</td>
+	<td>andrew</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=form.login</td>
+	<td>andrew</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=form.password</td>
+	<td>andrew</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.commonButton.login_ok</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Welcome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.corporateLogo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#welcomeTitle &gt; span</td>
+	<td>Welcome</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='header']/div[2]/div[2]/a/button</td>
+	<td>Logout</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=img[alt=&quot;welcome image&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='footer']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='footer']/div</td>
+	<td>Help</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Help</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.footerLogoImg &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span[title=&quot;Manage InStore Display&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span[title=&quot;Create Reports&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span[title=&quot;Upload Media&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span[title=&quot;Setup Products&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span[title=&quot;Setup Users/Groups&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span[title=&quot;Setup Stores/Structure&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span[title=&quot;Setup Templates&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span[title=&quot;Setup Attract Loops&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span[title=&quot;View Network Status&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span[title=&quot;Manage InStore Display&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Add Products to Posts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Add Posts to Display</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span[title=&quot;Setup Products&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Classify Products</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Create Products</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Assign Accessories</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span[title=&quot;Setup Stores/Structure&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Store Hierarchy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Group Media Players</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span[title=&quot;Setup Templates&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Template Styles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Schedule Templates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span[title=&quot;Setup Attract Loops&quot;]</td>
+	<td></td>
+</tr>
+<!--<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Default Attract Loop</td>
+	<td></td>
+</tr>-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Create Loops</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Schedule Loops</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

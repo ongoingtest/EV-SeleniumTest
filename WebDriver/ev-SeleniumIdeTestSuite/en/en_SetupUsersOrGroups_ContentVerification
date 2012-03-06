@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_SetupUsersOrGroups_ContentVerification</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_SetupUsersOrGroups_ContentVerification</td></tr>
+</thead><tbody>
+<!--Before Test: Please delete user  'testtest@test.com', user group 'test123456' and 'test userGroup2123456'-->
+<tr>
+	<td>open</td>
+	<td>/ev/setupusersorgroups</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.corporateLogo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Setup Users Or Groups</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pageTitle</td>
+	<td>Setup Users Or Groups</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#welcomeTitle &gt; span</td>
+	<td>Welcome</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='header']/div[2]/div[2]/a/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.columnHeaderText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.columnHeaderText</td>
+	<td>Users</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=filterUserColumn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=filterUserColumn</td>
+	<td>User Name First Name Last Name</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=filterTextUserColumn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.searchIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.createNewUser.commonButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.newUserButton.adder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=users_userDelete149</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=users_userOptions149</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=users_userDelete149</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.userGroupColumn &gt; div.columnHeader &gt; span.columnHeaderText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.userGroupColumn &gt; div.columnHeader &gt; span.columnHeaderText</td>
+	<td>User Groups</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=filterUserGroupColumn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>User Name First Name Last Name UserGroup Name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=filterTextUserGroupColumn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.userGroupColumn &gt; div.columnHeader &gt; span.searchIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.createNewUserGroup.commonButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.newUserGroupButton.adder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.createNewUser.commonButton</td>
+	<td>Create New User</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.createNewUserGroup.commonButton</td>
+	<td>Create New User Group</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=userGroup_userGroupOptions150</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=userGroup_userGroupDelete150</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#storeGroupsSpace &gt; div.columnHeader &gt; span.columnHeaderText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#storeGroupsSpace &gt; div.columnHeader &gt; span.columnHeaderText</td>
+	<td>Store Hierarchy</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=filterStoreGroupColumn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>UserGroup Name Store Name StoreGroup Name Company Name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=filterTextStoreGroupColumn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#storeGroupsSpace &gt; div.columnHeader &gt; span.searchIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=footer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='footer']/div</td>
+	<td>Help</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='footer']/div</td>
+	<td>Help</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Help</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

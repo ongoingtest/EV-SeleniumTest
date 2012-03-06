@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>en_SetupUsersOrGroups_Function_UsersGroups_PermissionNames</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">en_SetupUsersOrGroups_Function_UsersGroups_PermissionNames</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/setupusersorgroups</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=userGroup_userGroupOptions173</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=title</td>
+	<td>User Group Options</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>User Group Name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Duplicate User Group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=userGroupName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Permissions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Permissions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Create Attract Loops</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>Create Attract Loops</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='adjustOrderOfVideos']</td>
+	<td>Adjust Order Of Videos</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='createAttractLoop']</td>
+	<td>Create Attract Loop</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=userGroup_userGroupOptions173</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='deleteVideoAssignments']</td>
+	<td>Delete Video Assignments</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Schedule Templates</td>
+	<td>Schedule Templates</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Schedule Templates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#scheduleTemplatesPerms &gt; div.boldText &gt; label</td>
+	<td>Schedule Templates</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='assignTemplateSchedule']</td>
+	<td>Assign Template Schedule</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='removeTemplateSchedule']</td>
+	<td>Remove Template Schedule</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Template Styles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#templateStylesPerms &gt; div.boldText &gt; label</td>
+	<td>Template Styles</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='createTemplates']</td>
+	<td>Create Templates</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='deleteTemplates']</td>
+	<td>Delete Templates</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='renameTemplates']</td>
+	<td>Rename Templates</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='editTextAndMediaBackground']</td>
+	<td>Edit Text And Media Background</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='editTextColor']</td>
+	<td>Edit Text Color</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='editLogo']</td>
+	<td>Edit Logo</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='moveAndResizeTextRegions']</td>
+	<td>Move And Resize Text Regions</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='moveAndResizeMediaRegions']</td>
+	<td>Move And Resize Media Regions</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Create Products</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Create Products</td>
+	<td>Create Products</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#createProductsPerms &gt; div.boldText &gt; label</td>
+	<td>Create Products</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='createNewProducts']</td>
+	<td>Create New Products</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='deleteProducts']</td>
+	<td>Delete Products</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='addMediaToProduct']</td>
+	<td>Add Media To Product</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='adjustProductPrice']</td>
+	<td>Adjust Product Price</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='adjustProductModel']</td>
+	<td>Adjust Product Model</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='adjustProductSKU']</td>
+	<td>Adjust Product S K U</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='addProductDescription']</td>
+	<td>Add Product Description</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='addAdditionalText']</td>
+	<td>Add Additional Text</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='adjustKeywordAssignments']</td>
+	<td>Adjust Keyword Assignments</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Media Manager</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Media Manager</td>
+	<td>Media Manager</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#mediaManagerPerms &gt; div.boldText &gt; label</td>
+	<td>Media Manager</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='uploadNewMedia']</td>
+	<td>Upload New Media</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='deleteMedia']</td>
+	<td>Delete Media</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Group Media Players</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Group Media Players</td>
+	<td>Group Media Players</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#groupMediaPlayersPerms &gt; div.boldText &gt; label</td>
+	<td>Group Media Players</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='assignDevicesToGroups']</td>
+	<td>Assign Devices To Groups</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='renameDevices']</td>
+	<td>Rename Devices</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Network Manager</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Network Manager</td>
+	<td>Network Manager</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#networkManagerPerms &gt; div.boldText &gt; label</td>
+	<td>Network Manager</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='resetMediaPlayerPassword']</td>
+	<td>Reset Media Player Password</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='lockUnlockDevice']</td>
+	<td>Lock Unlock Device</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Assign Accessories</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Assign Accessories</td>
+	<td>Assign Accessories</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#assignAccessoriesPerms &gt; div.boldText &gt; label</td>
+	<td>Assign Accessories</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='assignAccessoryToProduct']</td>
+	<td>Assign Accessory To Product</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='deleteAccessoryAssignment']</td>
+	<td>Delete Accessory Assignment</td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Default Attract Loop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>css=#defaultAttractLoopPerms &gt; div.boldText &gt; label</td>
+	<td>Default Attract Loop</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Store Hierarchy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Store Hierarchy</td>
+	<td>Store Hierarchy</td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>css=#storeHierarchyPerms &gt; div.boldText &gt; label</td>
+	<td>Store Hierarchy</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='createStores']</td>
+	<td>Create Stores</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='createStoreGroups']</td>
+	<td>Create Store Groups</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='createCompanies']</td>
+	<td>Create Companies</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='adjustHierarchy']</td>
+	<td>Adjust Hierarchy</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='renameItemsInHierarchy']</td>
+	<td>Rename Items In Hierarchy</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='deleteItemsInHierarchy']</td>
+	<td>Delete Items In Hierarchy</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Assign Permissions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Assign Permissions</td>
+	<td>Assign Permissions</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#assignPermissionsPerms &gt; div.boldText &gt; label</td>
+	<td>Assign Permissions</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='createNewUsers']</td>
+	<td>Create New Users</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='editUserInformation']</td>
+	<td>Edit User Information</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='deleteUsers']</td>
+	<td>Delete Users</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='createUserGroups']</td>
+	<td>Create User Groups</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='editUserGroups']</td>
+	<td>Edit User Groups</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='deleteUserGroups']</td>
+	<td>Delete User Groups</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='assignVisibilizersToBaseDeviceContainers']</td>
+	<td>Assign User Group To Stores</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Create Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Create Reports</td>
+	<td>Create Reports</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#createReportsPerms &gt; div.boldText &gt; label</td>
+	<td>Create Reports</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='viewReports']</td>
+	<td>View Basic Reports</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='viewAdvancedReports']</td>
+	<td>View Advanced Reports</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Schedule Loops</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Schedule Loops</td>
+	<td>Schedule Loops</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#scheduleAttractLoopsPerms &gt; div.boldText &gt; label</td>
+	<td>Schedule Loops</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='assignLoopSchedule']</td>
+	<td>Assign Loop Schedule</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='removeLoopSchedule']</td>
+	<td>Remove Loop Schedule</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='editStartDate']</td>
+	<td>Edit Start Date</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='editEndDate']</td>
+	<td>Edit End Date</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='editStartTime']</td>
+	<td>Edit Start Time</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='editEndTime']</td>
+	<td>Edit End Time</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='editDaysOfWeek']</td>
+	<td>Edit Days Of Week</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Classify Products</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Classify Products</td>
+	<td>Classify Products</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#classifyProductsPerms &gt; div.boldText &gt; label</td>
+	<td>Classify Products</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='addProductCSc']</td>
+	<td>Add Product Category Subcategory</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='deleteProductCSc']</td>
+	<td>Delete Product Category Subcategory</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='editProductCSc']</td>
+	<td>Edit Product Category Subcategory</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='addProductKeyword']</td>
+	<td>Add Product Keyword</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label[@id='deleteProductKeyword']</td>
+	<td>Delete Product Keyword</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=button.exit</td>
+	<td>Cancel</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=okUserGroupOptions</td>
+	<td>Save</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=okUserGroupOptions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=okUserGroupOptions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#multipleUsers &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#userGroupOptions &gt; #userGroupOptions &gt; div.buttonStyle &gt; button.exit</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

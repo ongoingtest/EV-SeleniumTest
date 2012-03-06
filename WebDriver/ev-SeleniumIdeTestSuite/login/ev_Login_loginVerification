@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.204:8080/" />
+<title>ev_Login_loginVerification</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ev_Login_loginVerification</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ev/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.commonButton.login_ok</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Please enter your login id and password.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=form.login</td>
+	<td>andrew</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.commonButton.login_ok</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Please enter your password.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=form.login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=form.password</td>
+	<td>andrew</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.commonButton.login_ok</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Please enter your login id.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=form.password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=form.login</td>
+	<td>yrtest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=form.password</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.commonButton.login_ok</td>
+	<td></td>
+</tr>
+<!--<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='header']/div[2]/div[2]/a/button</td>
+	<td></td>
+</tr> -->
+</tbody></table>
+</body>
+</html>
