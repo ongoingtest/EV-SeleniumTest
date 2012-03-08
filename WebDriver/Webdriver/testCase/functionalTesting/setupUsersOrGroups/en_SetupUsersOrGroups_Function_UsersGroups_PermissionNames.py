@@ -3,27 +3,26 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 import unittest, time, re
-
+from Webdriver.all_globals import *
 class EnSetupUsersOrGroupsFunctionUsersGroupsPermissionNames(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Firefox()
-        self.driver.implicitly_wait(30)
-        self.base_url = "http://192.168.1.204:8080/"
-        self.verificationErrors = []
+        gb_setUp(self)
     
     def test_en_setup_users_or_groups_function_users_groups_permission_names(self):
         driver = self.driver
+        gb_login(self)
         driver.get(self.base_url + "/ev/setupusersorgroups")
         driver.find_element_by_id("userGroup_userGroupOptions173").click()
         try: self.assertEqual("User Group Options", driver.find_element_by_id("title").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
-        # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
-        # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
+        try: self.assertIn(u"User Group Name",driver.find_element_by_id("userGroupHeader").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
+        try: self.assertIn(u"Duplicate User Group",driver.find_element_by_id("duplicateUserGroup").text)
+        except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertTrue(self.is_element_present(By.ID, "userGroupName"))
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertTrue(self.is_element_present(By.LINK_TEXT, "Permissions"))
         except AssertionError as e: self.verificationErrors.append(str(e))
-        # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
         try: self.assertTrue(self.is_element_present(By.LINK_TEXT, "Create Attract Loops"))
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertEqual("Create Attract Loops", driver.find_element_by_css_selector("label").text)
@@ -123,12 +122,9 @@ class EnSetupUsersOrGroupsFunctionUsersGroupsPermissionNames(unittest.TestCase):
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertEqual("Delete Accessory Assignment", driver.find_element_by_xpath("//label[@id='deleteAccessoryAssignment']").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
-        # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
-        # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
         driver.find_element_by_link_text("Store Hierarchy").click()
         try: self.assertEqual("Store Hierarchy", driver.find_element_by_link_text("Store Hierarchy").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
-        # ERROR: Caught exception [ERROR: Unsupported command [isTextPresent]]
         try: self.assertEqual("Create Stores", driver.find_element_by_xpath("//label[@id='createStores']").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertEqual("Create Store Groups", driver.find_element_by_xpath("//label[@id='createStoreGroups']").text)
@@ -212,9 +208,6 @@ class EnSetupUsersOrGroupsFunctionUsersGroupsPermissionNames(unittest.TestCase):
         try: self.assertTrue(self.is_element_present(By.ID, "okUserGroupOptions"))
         except AssertionError as e: self.verificationErrors.append(str(e))
         driver.find_element_by_id("okUserGroupOptions").click()
-        driver.find_element_by_css_selector("button.exit").click()
-        driver.find_element_by_css_selector("#multipleUsers > div.buttonStyle > button.exit").click()
-        driver.find_element_by_css_selector("#userGroupOptions > #userGroupOptions > div.buttonStyle > button.exit").click()
     
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)

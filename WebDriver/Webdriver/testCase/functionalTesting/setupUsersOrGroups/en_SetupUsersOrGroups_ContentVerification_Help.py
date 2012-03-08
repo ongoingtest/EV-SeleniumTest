@@ -14,16 +14,17 @@ class EnSetupUsersOrGroupsContentVerificationHelp(unittest.TestCase):
         gb_login(self)
         driver.get(self.base_url + "/ev/setupusersorgroups")
         driver.find_element_by_xpath("//div[@id='footer']/div").click()
-        try: self.assertEqual("Help", driver.find_element_by_css_selector("span").text)
+        try: self.assertEqual(u"Help", driver.find_element_by_css_selector("span").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertTrue(self.is_element_present(By.ID, "title"))
         except AssertionError as e: self.verificationErrors.append(str(e))
-        try: self.assertIn(u"Users are created by clicking the Create New User. Users can be assigned to User Groups by clicking and dragging the User to a User Group. \n User Groups are where permissions are set. User Groups can be assigned to all levels of the Store Groups. This can be done by clicking and dragging the User Group to the desired Store Group level. \n All three sections can be sorted and searched by using the search features found in the heading.", driver.find_element_by_id("helpBody").text)
+        try: self.assertIn(u"Users are created by clicking the Create New User. Users can be assigned to User Groups by clicking and dragging the User to a User Group.", driver.find_element_by_id("helpBody").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertIn(u"User Groups are where permissions are set. User Groups can be assigned to all levels of the Store Groups. This can be done by clicking and dragging the User Group to the desired Store Group level.", driver.find_element_by_id("helpBody").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
         try: self.assertIn(u"All three sections can be sorted and searched by using the search features found in the heading.", driver.find_element_by_id("helpBody").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
+
         driver.find_element_by_css_selector("img.exit").click()
     
     def is_element_present(self, how, what):
