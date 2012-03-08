@@ -5,12 +5,18 @@ from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 import unittest, time, re
 
-gb_ip = "192.168.1.204"
+#gb_ip = "192.168.1.204"
+gb_ip = "127.0.0.1"
 gb_port = "8080"
 #gb_ip = "74.101.218.58"
 #gb_port = "9080"
 #gb_filename_prefix="/home/yueran/Zignage/seleniumTest/WebDriver/result"
-gb_filename_prefix = '/home/zignage/ev-SeleniumTest/WebDriver/result'
+#gb_filename_prefix = '/home/zignage/ev-SeleniumTest/WebDriver/result'
+gb_filename_prefix = '/home/yueran/EV-SeleniumTest/WebDriver/result'
+
+#Create Products
+#manufacture:
+gb_manTestValue = 6
 
 def gb_setUp(self):
     self.driver = webdriver.Firefox()

@@ -5,7 +5,10 @@ from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 import unittest, time, re
 from Webdriver.all_globals import *
-
+#Office
+#manTestValue = 40
+#Home
+#manTestValue = 6
 class EnCreateProductsFunctionCreateManufacture(unittest.TestCase):
     def setUp(self):
         gb_setUp(self)
@@ -33,7 +36,7 @@ class EnCreateProductsFunctionCreateManufacture(unittest.TestCase):
         driver.find_element_by_id("saveManufacturer").click()
         for i in range(60):
             try:
-                if u"MModifySuccess" == driver.find_element_by_css_selector("option[value=\"40\"]").text: break
+                if u"MModifySuccess" == driver.find_element_by_css_selector("option[value=\"6\"]").text: break
             except: pass
             time.sleep(1)
         else: self.fail("time out")
@@ -53,7 +56,7 @@ class EnCreateProductsFunctionCreateManufacture(unittest.TestCase):
         driver.find_element_by_id("saveManufacturer").click()
         for i in range(60):
             try:
-                if u"ManTest" == driver.find_element_by_css_selector("option[value=\"40\"]").text: break
+                if u"ManTest" == driver.find_element_by_css_selector("option[value=\"6\"]").text: break
             except: pass
             time.sleep(1)
         else: self.fail("time out")
